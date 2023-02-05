@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A6C4352990693F004C0278 /* kb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A6C4342990693F004C0278 /* kb.storyboard */; };
 		87ACB1D5298EE95C00FFC499 /* tzpi_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */; };
 		87ACB1D7298EE95C00FFC499 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1D6298EE95C00FFC499 /* ContentView.swift */; };
 		87ACB1D9298EE95E00FFC499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87ACB1D8298EE95E00FFC499 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		87ACB1E6298EE95E00FFC499 /* tzpi_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1E5298EE95E00FFC499 /* tzpi_2Tests.swift */; };
 		87ACB1F0298EE95E00FFC499 /* tzpi_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1EF298EE95E00FFC499 /* tzpi_2UITests.swift */; };
 		87ACB1F2298EE95E00FFC499 /* tzpi_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1F1298EE95E00FFC499 /* tzpi_2UITestsLaunchTests.swift */; };
+		87ACB205298EE9A000FFC499 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB204298EE9A000FFC499 /* KeyboardViewController.swift */; };
+		87ACB209298EE9A000FFC499 /* tzpi2.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87ACB202298EE99F00FFC499 /* tzpi2.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +34,31 @@
 			remoteGlobalIDString = 87ACB1D0298EE95C00FFC499;
 			remoteInfo = "tzpi 2";
 		};
+		87ACB207298EE9A000FFC499 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87ACB1C9298EE95C00FFC499 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87ACB201298EE99F00FFC499;
+			remoteInfo = tzpi2;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		87ACB20D298EE9A100FFC499 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87ACB209298EE9A000FFC499 /* tzpi2.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		87A6C4342990693F004C0278 /* kb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = kb.storyboard; sourceTree = "<group>"; };
 		87ACB1D1298EE95C00FFC499 /* tzpi 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tzpi 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tzpi_2App.swift; sourceTree = "<group>"; };
 		87ACB1D6298EE95C00FFC499 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +69,9 @@
 		87ACB1EB298EE95E00FFC499 /* tzpi 2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tzpi 2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ACB1EF298EE95E00FFC499 /* tzpi_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tzpi_2UITests.swift; sourceTree = "<group>"; };
 		87ACB1F1298EE95E00FFC499 /* tzpi_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tzpi_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		87ACB202298EE99F00FFC499 /* tzpi2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = tzpi2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87ACB204298EE9A000FFC499 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		87ACB206298EE9A000FFC499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87ACB1FF298EE99F00FFC499 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +112,7 @@
 				87ACB1D3298EE95C00FFC499 /* tzpi 2 */,
 				87ACB1E4298EE95E00FFC499 /* tzpi 2Tests */,
 				87ACB1EE298EE95E00FFC499 /* tzpi 2UITests */,
+				87ACB203298EE9A000FFC499 /* tzpi2 */,
 				87ACB1D2298EE95C00FFC499 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +123,7 @@
 				87ACB1D1298EE95C00FFC499 /* tzpi 2.app */,
 				87ACB1E1298EE95E00FFC499 /* tzpi 2Tests.xctest */,
 				87ACB1EB298EE95E00FFC499 /* tzpi 2UITests.xctest */,
+				87ACB202298EE99F00FFC499 /* tzpi2.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +164,16 @@
 			path = "tzpi 2UITests";
 			sourceTree = "<group>";
 		};
+		87ACB203298EE9A000FFC499 /* tzpi2 */ = {
+			isa = PBXGroup;
+			children = (
+				87ACB204298EE9A000FFC499 /* KeyboardViewController.swift */,
+				87ACB206298EE9A000FFC499 /* Info.plist */,
+				87A6C4342990693F004C0278 /* kb.storyboard */,
+			);
+			path = tzpi2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +184,12 @@
 				87ACB1CD298EE95C00FFC499 /* Sources */,
 				87ACB1CE298EE95C00FFC499 /* Frameworks */,
 				87ACB1CF298EE95C00FFC499 /* Resources */,
+				87ACB20D298EE9A100FFC499 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				87ACB208298EE9A000FFC499 /* PBXTargetDependency */,
 			);
 			name = "tzpi 2";
 			productName = "tzpi 2";
@@ -183,6 +232,23 @@
 			productReference = 87ACB1EB298EE95E00FFC499 /* tzpi 2UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		87ACB201298EE99F00FFC499 /* tzpi2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87ACB20A298EE9A100FFC499 /* Build configuration list for PBXNativeTarget "tzpi2" */;
+			buildPhases = (
+				87ACB1FE298EE99F00FFC499 /* Sources */,
+				87ACB1FF298EE99F00FFC499 /* Frameworks */,
+				87ACB200298EE99F00FFC499 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tzpi2;
+			productName = tzpi2;
+			productReference = 87ACB202298EE99F00FFC499 /* tzpi2.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +270,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 87ACB1D0298EE95C00FFC499;
 					};
+					87ACB201298EE99F00FFC499 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 87ACB1CC298EE95C00FFC499 /* Build configuration list for PBXProject "tzpi 2" */;
@@ -222,6 +291,7 @@
 				87ACB1D0298EE95C00FFC499 /* tzpi 2 */,
 				87ACB1E0298EE95E00FFC499 /* tzpi 2Tests */,
 				87ACB1EA298EE95E00FFC499 /* tzpi 2UITests */,
+				87ACB201298EE99F00FFC499 /* tzpi2 */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +317,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87ACB200298EE99F00FFC499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A6C4352990693F004C0278 /* kb.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +357,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87ACB1FE298EE99F00FFC499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87ACB205298EE9A000FFC499 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +377,11 @@
 			isa = PBXTargetDependency;
 			target = 87ACB1D0298EE95C00FFC499 /* tzpi 2 */;
 			targetProxy = 87ACB1EC298EE95E00FFC499 /* PBXContainerItemProxy */;
+		};
+		87ACB208298EE9A000FFC499 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87ACB201298EE99F00FFC499 /* tzpi2 */;
+			targetProxy = 87ACB207298EE9A000FFC499 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +503,7 @@
 		87ACB1F6298EE95E00FFC499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +532,7 @@
 		87ACB1F7298EE95E00FFC499 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +630,54 @@
 			};
 			name = Release;
 		};
+		87ACB20B298EE9A100FFC499 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tzpi2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tzpi2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "etf.tzpi-2.tzpi2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87ACB20C298EE9A100FFC499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = tzpi2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = tzpi2;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "etf.tzpi-2.tzpi2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +713,15 @@
 			buildConfigurations = (
 				87ACB1FC298EE95E00FFC499 /* Debug */,
 				87ACB1FD298EE95E00FFC499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87ACB20A298EE9A100FFC499 /* Build configuration list for PBXNativeTarget "tzpi2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87ACB20B298EE9A100FFC499 /* Debug */,
+				87ACB20C298EE9A100FFC499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
