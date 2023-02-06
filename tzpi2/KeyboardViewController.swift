@@ -61,11 +61,15 @@ class KeyboardViewController: UIInputViewController {
         print("siuuuu")
         var a:String=self.textDocumentProxy.documentContextBeforeInput!
         print(a)
-        let length = a.count
         let url = URL(string:"https://api.openai.com/v1/completions")!
         var request = URLRequest(url: url)
+        print("kurva")
         request.httpMethod = "POST"
-        request.addValue("Bearer ", forHTTPHeaderField: "Authorization")
+        let userDefaults = UserDefaults(suiteName: "group.etf.tzpi-2.tzpi2")
+        let myValue:String = userDefaults!.string(forKey: "Key")!
+        print(myValue)
+        request.addValue("Bearer \(myValue)", forHTTPHeaderField: "Authorization")
+        
         let json: [String: Any] = [
             
         "model": "text-davinci-003",
@@ -80,7 +84,9 @@ class KeyboardViewController: UIInputViewController {
         for _ in 0..<a.count {
             self.textDocumentProxy.deleteBackward()
                }
+        print("obrisano")
         URLSession.shared.dataTask(with: request) { (data, response, error) in
+            print("moja buducnost")
             if let error = error {
                  print("Error: \(error)")
                  return

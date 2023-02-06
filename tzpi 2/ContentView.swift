@@ -15,8 +15,19 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, !")
             TextField("hehe",text:$username)
+            Button(action: {
+              // your action here
+                print("degen")
+                print(username)
+                let userDefaults = UserDefaults(suiteName: "group.etf.tzpi-2.tzpi2")
+                userDefaults?.set(username, forKey: "Key")
+               userDefaults?.synchronize()
+                print("myValue7")
+            }, label: {
+              Text("Unesi api key")
+            })
         }
         .padding()
     }

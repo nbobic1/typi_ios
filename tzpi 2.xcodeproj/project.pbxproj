@@ -58,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		87A2D1AF29912A5C0024DF30 /* tzpi 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "tzpi 2.entitlements"; sourceTree = "<group>"; };
+		87A2D1B029912C510024DF30 /* tzpi2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tzpi2.entitlements; sourceTree = "<group>"; };
 		87A6C4342990693F004C0278 /* kb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = kb.storyboard; sourceTree = "<group>"; };
 		87ACB1D1298EE95C00FFC499 /* tzpi 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tzpi 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tzpi_2App.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		87ACB1D3298EE95C00FFC499 /* tzpi 2 */ = {
 			isa = PBXGroup;
 			children = (
+				87A2D1AF29912A5C0024DF30 /* tzpi 2.entitlements */,
 				87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */,
 				87ACB1D6298EE95C00FFC499 /* ContentView.swift */,
 				87ACB1D8298EE95E00FFC499 /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 		87ACB203298EE9A000FFC499 /* tzpi2 */ = {
 			isa = PBXGroup;
 			children = (
+				87A2D1B029912C510024DF30 /* tzpi2.entitlements */,
 				87ACB204298EE9A000FFC499 /* KeyboardViewController.swift */,
 				87ACB206298EE9A000FFC499 /* Info.plist */,
 				87A6C4342990693F004C0278 /* kb.storyboard */,
@@ -506,9 +510,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tzpi 2/tzpi 2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tzpi 2/Preview Content\"";
+				DEVELOPMENT_TEAM = J4R5PRZPV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -535,9 +541,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "tzpi 2/tzpi 2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tzpi 2/Preview Content\"";
+				DEVELOPMENT_TEAM = J4R5PRZPV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -633,8 +641,10 @@
 		87ACB20B298EE9A100FFC499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tzpi2/tzpi2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4R5PRZPV2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tzpi2/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = tzpi2;
@@ -657,8 +667,10 @@
 		87ACB20C298EE9A100FFC499 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = tzpi2/tzpi2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J4R5PRZPV2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = tzpi2/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = tzpi2;
