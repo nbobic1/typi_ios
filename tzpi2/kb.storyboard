@@ -22,29 +22,32 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button3"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-Xh-erj">
-                                <rect key="frame" x="156" y="114" width="82" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-fg-lrM">
+                                <rect key="frame" x="154" y="409" width="85" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgT-Xh-erj">
+                                <rect key="frame" x="16" y="84" width="92" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button1"/>
                                 <connections>
                                     <action selector="dugme:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="emf-tr-Fgw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-fg-lrM">
-                                <rect key="frame" x="154" y="409" width="85" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button2"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VgT-Xh-erj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="41" id="D6S-FJ-PCI"/>
+                            <constraint firstItem="VgT-Xh-erj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="79" id="cJ5-On-u9n"/>
+                            <constraint firstItem="Vz7-fg-lrM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="350" id="vIb-2n-5FR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="-29"/>
+            <point key="canvasLocation" x="-440.45801526717554" y="-29.577464788732396"/>
         </scene>
     </scenes>
     <resources>

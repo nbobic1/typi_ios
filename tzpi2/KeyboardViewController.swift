@@ -62,23 +62,51 @@ class KeyboardViewController: UIInputViewController {
         var a:String=self.textDocumentProxy.documentContextBeforeInput!
         print(a)
         let length = a.count
-        let url = URL(string: "https://www.example.com/api/endpoint")!
+        let url = URL(string:"https://api.openai.com/v1/completions")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.httpBody = "request_body".data(using: .utf8)
+        request.addValue("Bearer ", forHTTPHeaderField: "Authorization")
+        let json: [String: Any] = [
+            
+        "model": "text-davinci-003",
+        "prompt": "\(a)",
+        "max_tokens": 7,
+        "temperature": 0.7,
+        "frequency_penalty": 0.5]
+        let jsonData = try? JSONSerialization.data(withJSONObject: json)
+        request.httpBody = jsonData
+
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type");
+        for _ in 0..<a.count {
+            self.textDocumentProxy.deleteBackward()
+               }
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let error = error {
                  print("Error: \(error)")
                  return
              }
-             if let data = data {
-                 let responseString = String(data: data, encoding: .utf8)
-                 print("Response: \(responseString)")
-             }
-         }.resume()
-        for _ in 0..<length {
-                    textDocumentProxy.deleteBackward()
-                }
-        self.textDocumentProxy.insertText("hehe")
+            if let data = data {
+                
+                var responseString1 = String(data: data, encoding: .utf8) ?? " ";
+                do {
+                            if let data = responseString1.data(using: .utf8),
+                         let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
+                         let choices = json["choices"] as? [[String: Any]] {
+                         if let firstChoice = choices.first,
+                         let text = firstChoice["text"] as? String {
+                         print(text)
+                           
+                            // self.textDocumentProxy.replace(<#T##UITextRange#>, withText: a)
+                                // self.textDocumentProxy.deleteBackward()
+                             
+                             self.textDocumentProxy.insertText(text)                         }
+                         }
+                 } catch {
+                     print("Error: \(error)")
+                 }
+                
+            }
+             }.resume()
+     
     }
 }
