@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8753518529A24D49009B1CE3 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753518429A24D49009B1CE3 /* PopUp.swift */; };
+		8753518729A24D73009B1CE3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753518629A24D73009B1CE3 /* View.xib */; };
 		87A6C4352990693F004C0278 /* kb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A6C4342990693F004C0278 /* kb.storyboard */; };
 		87ACB1D5298EE95C00FFC499 /* tzpi_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */; };
 		87ACB1D7298EE95C00FFC499 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1D6298EE95C00FFC499 /* ContentView.swift */; };
@@ -58,6 +60,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8753518429A24D49009B1CE3 /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
+		8753518629A24D73009B1CE3 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		87A2D1AF29912A5C0024DF30 /* tzpi 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "tzpi 2.entitlements"; sourceTree = "<group>"; };
 		87A2D1B029912C510024DF30 /* tzpi2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tzpi2.entitlements; sourceTree = "<group>"; };
 		87A6C4342990693F004C0278 /* kb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = kb.storyboard; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 			children = (
 				87A2D1B029912C510024DF30 /* tzpi2.entitlements */,
 				87ACB204298EE9A000FFC499 /* KeyboardViewController.swift */,
+				8753518429A24D49009B1CE3 /* PopUp.swift */,
+				8753518629A24D73009B1CE3 /* View.xib */,
 				87ACB206298EE9A000FFC499 /* Info.plist */,
 				87A6C4342990693F004C0278 /* kb.storyboard */,
 			);
@@ -328,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8753518729A24D73009B1CE3 /* View.xib in Resources */,
 				87A6C4352990693F004C0278 /* kb.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8753518529A24D49009B1CE3 /* PopUp.swift in Sources */,
 				87ACB205298EE9A000FFC499 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -494,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

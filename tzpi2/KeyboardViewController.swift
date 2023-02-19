@@ -8,7 +8,7 @@
 import UIKit
 
 class KeyboardViewController: UIInputViewController {
-
+        var reverseContent=""
     @IBOutlet var nextKeyboardButton: UIButton!
       override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -55,9 +55,18 @@ class KeyboardViewController: UIInputViewController {
             textColor = UIColor.black
         }
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
+     
     }
 
-    @IBAction func dugme(_ sender: Any) {
+    @IBAction func reverseBtn(_ sender: Any) {
+        var a:String=self.textDocumentProxy.documentContextBeforeInput!
+        for _ in 0..<a.count {
+            self.textDocumentProxy.deleteBackward()
+               }
+        self.textDocumentProxy.insertText(reverseContent)
+    }
+    func apiCall(prompt:String)
+    {
         print("siuuuu")
         var a:String=self.textDocumentProxy.documentContextBeforeInput!
         print(a)
@@ -69,11 +78,10 @@ class KeyboardViewController: UIInputViewController {
         let myValue:String = userDefaults!.string(forKey: "Key")!
         print(myValue)
         request.addValue("Bearer \(myValue)", forHTTPHeaderField: "Authorization")
-        
+        reverseContent=a
         let json: [String: Any] = [
-            
         "model": "text-davinci-003",
-        "prompt": "\(a)",
+        "prompt": "\(prompt)\(a)",
         "max_tokens": 7,
         "temperature": 0.7,
         "frequency_penalty": 0.5]
@@ -84,6 +92,8 @@ class KeyboardViewController: UIInputViewController {
         for _ in 0..<a.count {
             self.textDocumentProxy.deleteBackward()
                }
+        
+        self.textDocumentProxy.insertText("wait...")
         print("obrisano")
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             print("moja buducnost")
@@ -104,7 +114,9 @@ class KeyboardViewController: UIInputViewController {
                            
                             // self.textDocumentProxy.replace(<#T##UITextRange#>, withText: a)
                                 // self.textDocumentProxy.deleteBackward()
-                             
+                             for _ in 0..<7 {
+                                 self.textDocumentProxy.deleteBackward()
+                                    }
                              self.textDocumentProxy.insertText(text)                         }
                          }
                  } catch {
@@ -114,5 +126,8 @@ class KeyboardViewController: UIInputViewController {
             }
              }.resume()
      
+    }
+    @IBAction func dugme(_ sender: Any) {
+        apiCall(prompt:	"")
     }
 }
