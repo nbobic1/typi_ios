@@ -57,8 +57,12 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
      
     }
-
+   public func povrat(option:String){
+        print(option," hehehehe")
+    }
     @IBAction func reverseBtn(_ sender: Any) {
+        let overLayerView = PopUp()
+               overLayerView.appear(sender: self)
         var a:String=self.textDocumentProxy.documentContextBeforeInput!
         for _ in 0..<a.count {
             self.textDocumentProxy.deleteBackward()
