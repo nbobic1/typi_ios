@@ -63,7 +63,12 @@ class KeyboardViewController: UIInputViewController {
     @IBAction func reverseBtn(_ sender: Any) {
         let overLayerView = PopUp()
                overLayerView.appear(sender: self)
-        var a:String=self.textDocumentProxy.documentContextBeforeInput!
+        
+        var a:String=""
+        if(self.textDocumentProxy.documentContextBeforeInput==nil)
+        {
+            a=self.textDocumentProxy.documentContextBeforeInput!
+        }
         for _ in 0..<a.count {
             self.textDocumentProxy.deleteBackward()
                }

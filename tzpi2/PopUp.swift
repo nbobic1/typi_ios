@@ -53,6 +53,8 @@ class PopUp: UIViewController {
         super.viewDidLoad()
 
         configView()
+        contentView.layer.borderWidth=2
+        contentView.layer.borderColor=UIColor.blue.cgColor
     }
     
     private func configView() {

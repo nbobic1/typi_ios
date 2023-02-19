@@ -21,16 +21,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-7r-ept" userLabel="contentView">
-                    <rect key="frame" x="87" y="323" width="240" height="250"/>
+                    <rect key="frame" x="57" y="333" width="300" height="230"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3Q-2A-qRM">
-                            <rect key="frame" x="0.0" y="61" width="240" height="128"/>
+                            <rect key="frame" x="0.0" y="61" width="300" height="108"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKj-V4-ByE">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="600"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="600"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wje-hu-jWK" userLabel="4">
-                                            <rect key="frame" x="175" y="76" width="64.5" height="34.5"/>
+                                            <rect key="frame" x="219" y="76" width="80.5" height="34.5"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="4" cornerStyle="large">
                                                 <backgroundConfiguration key="background">
@@ -88,7 +88,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qi6-Uj-Gpw" userLabel="5">
-                                            <rect key="frame" x="126" y="464.5" width="34.5" height="34.5"/>
+                                            <rect key="frame" x="170" y="464.5" width="34.5" height="34.5"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" title="5" cornerStyle="large">
                                                 <backgroundConfiguration key="background">
@@ -130,8 +130,8 @@
                     <constraints>
                         <constraint firstItem="x3Q-2A-qRM" firstAttribute="top" secondItem="RFc-7r-ept" secondAttribute="top" constant="61" id="01v-Er-MRV"/>
                         <constraint firstItem="x3Q-2A-qRM" firstAttribute="centerX" secondItem="RFc-7r-ept" secondAttribute="centerX" id="4bn-ON-Z2I"/>
-                        <constraint firstAttribute="width" constant="240" id="Ca2-aZ-QQ0"/>
-                        <constraint firstAttribute="height" constant="250" id="Xhn-ty-rV1"/>
+                        <constraint firstAttribute="width" constant="300" id="Ca2-aZ-QQ0"/>
+                        <constraint firstAttribute="height" constant="230" id="Xhn-ty-rV1"/>
                         <constraint firstItem="x3Q-2A-qRM" firstAttribute="centerY" secondItem="RFc-7r-ept" secondAttribute="centerY" id="Z7R-JL-OyJ"/>
                         <constraint firstItem="Wje-hu-jWK" firstAttribute="width" secondItem="RFc-7r-ept" secondAttribute="width" multiplier="0.26875" id="ldf-u8-2jJ"/>
                         <constraint firstItem="x3Q-2A-qRM" firstAttribute="leading" secondItem="RFc-7r-ept" secondAttribute="leading" id="niD-Up-vt1"/>
