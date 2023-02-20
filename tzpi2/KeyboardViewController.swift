@@ -6,10 +6,11 @@
 //
 
 import UIKit
-
+import Mixpanel
 class KeyboardViewController: UIInputViewController {
         var reverseContent=""
     @IBOutlet var nextKeyboardButton: UIButton!
+    
       override func updateViewConstraints() {
         super.updateViewConstraints()
         print("ma moye")
@@ -57,7 +58,8 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
      
     }
-   public func rephraseCallback(option:String){
+   
+    public func rephraseCallback(option:String){
         apiCall(prompt: "Rephrase this text so it sounds more "+option+": ")
     }
     
@@ -65,7 +67,9 @@ class KeyboardViewController: UIInputViewController {
         apiCall(prompt: "Translate this text to "+option+": ")
     }
     @IBAction func reverseBtn(_ sender: Any) {
-      
+        print("reverseeee")
+        Mixpanel.initialize(token: "04a8679d9c235e46100327d4f06c43aa", trackAutomaticEvents: true)
+        Mixpanel.mainInstance().track(event: "TypiReverse")
         var a:String=""
         if(self.textDocumentProxy != nil && self.textDocumentProxy.documentContextBeforeInput != nil)
         {

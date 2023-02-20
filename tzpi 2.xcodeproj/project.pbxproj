@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8753518529A24D49009B1CE3 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753518429A24D49009B1CE3 /* PopUp.swift */; };
 		8753518729A24D73009B1CE3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753518629A24D73009B1CE3 /* View.xib */; };
+		87A202AF29A3D03600E1D19B /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 87A202AE29A3D03600E1D19B /* Mixpanel */; };
+		87A202B229A3D73400E1D19B /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 87A202B129A3D73400E1D19B /* Mixpanel */; };
 		87A48D3529A2D7E20071039A /* TranslatePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A48D3329A2D7E20071039A /* TranslatePopUp.swift */; };
 		87A48D3629A2D7E20071039A /* TranslatePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A48D3429A2D7E20071039A /* TranslatePopUp.xib */; };
 		87A5ADA229A3014600B15DFA /* RephrasePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5ADA029A3014600B15DFA /* RephrasePopUp.swift */; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A202AF29A3D03600E1D19B /* Mixpanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,12 +117,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A202B229A3D73400E1D19B /* Mixpanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87A202B029A3D73400E1D19B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		87ACB1C8298EE95C00FFC499 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +139,7 @@
 				87ACB1EE298EE95E00FFC499 /* tzpi 2UITests */,
 				87ACB203298EE9A000FFC499 /* tzpi2 */,
 				87ACB1D2298EE95C00FFC499 /* Products */,
+				87A202B029A3D73400E1D19B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,6 +226,9 @@
 				87ACB208298EE9A000FFC499 /* PBXTargetDependency */,
 			);
 			name = "tzpi 2";
+			packageProductDependencies = (
+				87A202AE29A3D03600E1D19B /* Mixpanel */,
+			);
 			productName = "tzpi 2";
 			productReference = 87ACB1D1298EE95C00FFC499 /* tzpi 2.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +282,9 @@
 			dependencies = (
 			);
 			name = tzpi2;
+			packageProductDependencies = (
+				87A202B129A3D73400E1D19B /* Mixpanel */,
+			);
 			productName = tzpi2;
 			productReference = 87ACB202298EE99F00FFC499 /* tzpi2.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -306,6 +324,9 @@
 				Base,
 			);
 			mainGroup = 87ACB1C8298EE95C00FFC499;
+			packageReferences = (
+				87A202AD29A3D03600E1D19B /* XCRemoteSwiftPackageReference "mixpanel-swift" */,
+			);
 			productRefGroup = 87ACB1D2298EE95C00FFC499 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -763,6 +784,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87A202AD29A3D03600E1D19B /* XCRemoteSwiftPackageReference "mixpanel-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mixpanel/mixpanel-swift#1-install-mixpanel";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87A202AE29A3D03600E1D19B /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87A202AD29A3D03600E1D19B /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+		87A202B129A3D73400E1D19B /* Mixpanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87A202AD29A3D03600E1D19B /* XCRemoteSwiftPackageReference "mixpanel-swift" */;
+			productName = Mixpanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 87ACB1C9298EE95C00FFC499 /* Project object */;
 }
