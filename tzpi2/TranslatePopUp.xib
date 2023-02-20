@@ -64,6 +64,9 @@
                                                 </backgroundConfiguration>
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="english:" destination="-1" eventType="touchUpInside" id="QNe-7B-RPB"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMm-ak-8PE">
                                             <rect key="frame" x="160" y="96" width="121" height="35"/>
@@ -78,6 +81,9 @@
                                                 </backgroundConfiguration>
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="german:" destination="-1" eventType="touchUpInside" id="rnU-no-UbL"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igD-4f-upH">
                                             <rect key="frame" x="19" y="96" width="121" height="35"/>
@@ -92,6 +98,9 @@
                                                 </backgroundConfiguration>
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="spanish:" destination="-1" eventType="touchUpInside" id="Dgu-2P-rfp"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbY-Zt-SE3">
                                             <rect key="frame" x="160" y="141" width="121" height="35"/>
@@ -106,6 +115,9 @@
                                                 </backgroundConfiguration>
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="bosnian:" destination="-1" eventType="touchUpInside" id="lW0-Ng-Zat"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkz-J2-up9">
                                             <rect key="frame" x="19" y="141" width="121" height="35"/>
@@ -120,6 +132,9 @@
                                                 </backgroundConfiguration>
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
+                                            <connections>
+                                                <action selector="french:" destination="-1" eventType="touchUpInside" id="FLD-FX-9E1"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>

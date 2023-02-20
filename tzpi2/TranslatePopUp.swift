@@ -37,6 +37,26 @@ class TranslatePopUp: UIViewController {
         keyboardViewController.translateCallback(option: "italian")
         hide()
     }
+    @IBAction func spanish(_ sender: Any) {
+        keyboardViewController.translateCallback(option: "spanish")
+        hide()
+    }
+    @IBAction func french(_ sender: Any) {
+        keyboardViewController.translateCallback(option: "french")
+        hide()
+    }
+    @IBAction func german(_ sender: Any) {
+        keyboardViewController.translateCallback(option: "german")
+        hide()
+    }
+    @IBAction func bosnian(_ sender: Any) {
+        keyboardViewController.translateCallback(option: "bosnian")
+        hide()
+    }
+    @IBAction func english(_ sender: Any) {
+        keyboardViewController.translateCallback(option: "english")
+        hide()
+    }
     init() {
         super.init(nibName: "TranslatePopUp", bundle: nil)
         self.modalPresentationStyle = .overFullScreen
