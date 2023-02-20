@@ -41,12 +41,12 @@ class KeyboardViewController: UIInputViewController {
     
     override func textWillChange(_ textInput: UITextInput?) {
         // The app is about to change the document's contents. Perform any preparation here.
-        print("ehhh")
+        
     }
     
     override func textDidChange(_ textInput: UITextInput?) {
         // The app has just changed the document's contents, the document context has been updated.
-        print("huhhh")
+      
         var textColor: UIColor
         let proxy = self.textDocumentProxy
         if proxy.keyboardAppearance == UIKeyboardAppearance.dark {
@@ -57,15 +57,17 @@ class KeyboardViewController: UIInputViewController {
         self.nextKeyboardButton.setTitleColor(textColor, for: [])
      
     }
-   public func povrat(option:String){
-        print(option," hehehehe")
+   public func rephraseCallback(option:String){
+        apiCall(prompt: "Rephrase this text so it sounds more "+option+": ")
+    }
+    
+   public func translateCallback(option:String){
+        apiCall(prompt: "Translate this text to "+option+": ")
     }
     @IBAction func reverseBtn(_ sender: Any) {
-        let overLayerView = PopUp()
-               overLayerView.appear(sender: self)
-        
+      
         var a:String=""
-        if(self.textDocumentProxy.documentContextBeforeInput==nil)
+        if(self.textDocumentProxy != nil && self.textDocumentProxy.documentContextBeforeInput != nil)
         {
             a=self.textDocumentProxy.documentContextBeforeInput!
         }
@@ -74,11 +76,35 @@ class KeyboardViewController: UIInputViewController {
                }
         self.textDocumentProxy.insertText(reverseContent)
     }
+    @IBAction func translate(_ sender: Any) {
+            let translateView = TranslatePopUp()
+                   translateView.appear(sender: self)
+    }
+    @IBAction func rephrase(_ sender: Any) {
+        let rephraseView = RephrasePopUp()
+               rephraseView.appear(sender: self)
+    }
+    @IBAction func help(_ sender: Any) {
+        let overLayerView = PopUp()
+               overLayerView.appear(sender: self)
+    }
+    @IBAction func summerize(_ sender: Any) {
+        apiCall(prompt: "Summarize this text: ")
+    }
+    @IBAction func correct_grammar(_ sender: Any) {
+        apiCall(prompt: "Correct grammar in this text: ")
+    }
     func apiCall(prompt:String)
     {
-        print("siuuuu")
-        var a:String=self.textDocumentProxy.documentContextBeforeInput!
-        print(a)
+        
+        print("siuuuu "+prompt)
+        var a:String=""
+        if(self.textDocumentProxy != nil && self.textDocumentProxy.documentContextBeforeInput != nil)
+        {
+            a=self.textDocumentProxy.documentContextBeforeInput!
+        }
+        a=prompt+a
+        print("a="+a)
         let url = URL(string:"https://api.openai.com/v1/completions")!
         var request = URLRequest(url: url)
         print("kurva")
@@ -90,7 +116,7 @@ class KeyboardViewController: UIInputViewController {
         reverseContent=a
         let json: [String: Any] = [
         "model": "text-davinci-003",
-        "prompt": "\(prompt)\(a)",
+        "prompt": "\(a)",
         "max_tokens": 7,
         "temperature": 0.7,
         "frequency_penalty": 0.5]

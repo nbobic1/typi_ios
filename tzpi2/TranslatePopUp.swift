@@ -27,19 +27,18 @@ class PopUp: UIView {
 
 import UIKit
 
-class PopUp: UIViewController {
+class TranslatePopUp: UIViewController {
 
     var keyboardViewController:KeyboardViewController!
     //IBOutlets
-    @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var doneButton: UIButton!
-    @IBAction func doneButtonAction(_ sender: UIButton) {
-        hide()
-        
-    }
     
+    @IBOutlet weak var contentView: UIView!
+    @IBAction func italian(_ sender: Any) {
+        keyboardViewController.translateCallback(option: "italian")
+        hide()
+    }
     init() {
-        super.init(nibName: "View", bundle: nil)
+        super.init(nibName: "TranslatePopUp", bundle: nil)
         self.modalPresentationStyle = .overFullScreen
             keyboardViewController=nil
     }

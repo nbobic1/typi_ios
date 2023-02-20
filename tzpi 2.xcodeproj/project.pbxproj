@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		8753518529A24D49009B1CE3 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753518429A24D49009B1CE3 /* PopUp.swift */; };
 		8753518729A24D73009B1CE3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753518629A24D73009B1CE3 /* View.xib */; };
+		87A48D3529A2D7E20071039A /* TranslatePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A48D3329A2D7E20071039A /* TranslatePopUp.swift */; };
+		87A48D3629A2D7E20071039A /* TranslatePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A48D3429A2D7E20071039A /* TranslatePopUp.xib */; };
+		87A5ADA229A3014600B15DFA /* RephrasePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5ADA029A3014600B15DFA /* RephrasePopUp.swift */; };
+		87A5ADA329A3014600B15DFA /* RephrasePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A5ADA129A3014600B15DFA /* RephrasePopUp.xib */; };
 		87A6C4352990693F004C0278 /* kb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A6C4342990693F004C0278 /* kb.storyboard */; };
 		87ACB1D5298EE95C00FFC499 /* tzpi_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */; };
 		87ACB1D7298EE95C00FFC499 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ACB1D6298EE95C00FFC499 /* ContentView.swift */; };
@@ -64,6 +68,10 @@
 		8753518629A24D73009B1CE3 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		87A2D1AF29912A5C0024DF30 /* tzpi 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "tzpi 2.entitlements"; sourceTree = "<group>"; };
 		87A2D1B029912C510024DF30 /* tzpi2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tzpi2.entitlements; sourceTree = "<group>"; };
+		87A48D3329A2D7E20071039A /* TranslatePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePopUp.swift; sourceTree = "<group>"; };
+		87A48D3429A2D7E20071039A /* TranslatePopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslatePopUp.xib; sourceTree = "<group>"; };
+		87A5ADA029A3014600B15DFA /* RephrasePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RephrasePopUp.swift; sourceTree = "<group>"; };
+		87A5ADA129A3014600B15DFA /* RephrasePopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RephrasePopUp.xib; sourceTree = "<group>"; };
 		87A6C4342990693F004C0278 /* kb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = kb.storyboard; sourceTree = "<group>"; };
 		87ACB1D1298EE95C00FFC499 /* tzpi 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tzpi 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tzpi_2App.swift; sourceTree = "<group>"; };
@@ -180,6 +188,10 @@
 				8753518629A24D73009B1CE3 /* View.xib */,
 				87ACB206298EE9A000FFC499 /* Info.plist */,
 				87A6C4342990693F004C0278 /* kb.storyboard */,
+				87A48D3329A2D7E20071039A /* TranslatePopUp.swift */,
+				87A48D3429A2D7E20071039A /* TranslatePopUp.xib */,
+				87A5ADA029A3014600B15DFA /* RephrasePopUp.swift */,
+				87A5ADA129A3014600B15DFA /* RephrasePopUp.xib */,
 			);
 			path = tzpi2;
 			sourceTree = "<group>";
@@ -335,7 +347,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8753518729A24D73009B1CE3 /* View.xib in Resources */,
+				87A48D3629A2D7E20071039A /* TranslatePopUp.xib in Resources */,
 				87A6C4352990693F004C0278 /* kb.storyboard in Resources */,
+				87A5ADA329A3014600B15DFA /* RephrasePopUp.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +387,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8753518529A24D49009B1CE3 /* PopUp.swift in Sources */,
+				87A5ADA229A3014600B15DFA /* RephrasePopUp.swift in Sources */,
+				87A48D3529A2D7E20071039A /* TranslatePopUp.swift in Sources */,
 				87ACB205298EE9A000FFC499 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

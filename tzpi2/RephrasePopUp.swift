@@ -1,45 +1,47 @@
-//
-//  PopUp.swift
-//  tzpi2
-//
-//  Created by sova on 19. 2. 2023..
-//
-/*
-import UIKit
-
-class PopUp: UIView {
-
-    
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    
-
-}*/
-//
-//  OverLayerView.swift
-//  CustomPopUp
-//
-//  Created by Sajjad Sarkoobi on 8.07.2022.
-//
 
 import UIKit
 
-class PopUp: UIViewController {
+class RephrasePopUp: UIViewController {
 
     var keyboardViewController:KeyboardViewController!
     //IBOutlets
     @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var doneButton: UIButton!
-    @IBAction func doneButtonAction(_ sender: UIButton) {
-        hide()
-        
-    }
+   
     
+    @IBAction func humoristic(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "humoristic")
+        hide()
+    }
+    @IBAction func sympathetic(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "sympathetic")
+        hide()
+    }
+    @IBAction func sincere(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "sincere")
+        hide()
+    }
+    @IBAction func friendly(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "friendly")
+        hide()
+    }
+    @IBAction func caring(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "caring")
+        hide()
+    }
+    @IBAction func formal(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "formal")
+        hide()
+    }
+    @IBAction func excited(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "excited")
+        hide()
+    }
+    @IBAction func sarcastic(_ sender: Any) {
+        keyboardViewController.rephraseCallback(option: "sarcastic")
+        hide()
+    }
     init() {
-        super.init(nibName: "View", bundle: nil)
+        super.init(nibName: "RephrasePopUp", bundle: nil)
         self.modalPresentationStyle = .overFullScreen
             keyboardViewController=nil
     }

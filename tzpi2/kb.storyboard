@@ -33,6 +33,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Translate"/>
                                                 <connections>
                                                     <action selector="reverseBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="P5P-gC-8b0"/>
+                                                    <action selector="translate:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iDB-Gz-lgc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbl-Xs-kyd">
@@ -46,6 +47,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Rephrase"/>
                                                 <connections>
+                                                    <action selector="rephrase:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CU8-dm-Qc2"/>
                                                     <action selector="reverseBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Khe-My-Wl5"/>
                                                 </connections>
                                             </button>
@@ -71,6 +73,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Correct grammar"/>
                                                 <connections>
+                                                    <action selector="correct_grammar:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="arT-ip-aTb"/>
                                                     <action selector="dugme:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IE1-O8-des"/>
                                                 </connections>
                                             </button>
@@ -99,6 +102,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Help"/>
                                                 <connections>
                                                     <action selector="dugme:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dPO-ur-cSs"/>
+                                                    <action selector="help:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="d6a-JO-DU4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkf-4Y-03G">
@@ -112,6 +116,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Summarize"/>
                                                 <connections>
                                                     <action selector="dugme:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mMO-fj-0oR"/>
+                                                    <action selector="summerize:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kaf-ZB-Nbs"/>
                                                 </connections>
                                             </button>
                                         </subviews>
