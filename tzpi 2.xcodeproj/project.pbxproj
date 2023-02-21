@@ -11,6 +11,7 @@
 		8753518729A24D73009B1CE3 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8753518629A24D73009B1CE3 /* View.xib */; };
 		87A202AF29A3D03600E1D19B /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 87A202AE29A3D03600E1D19B /* Mixpanel */; };
 		87A202B229A3D73400E1D19B /* Mixpanel in Frameworks */ = {isa = PBXBuildFile; productRef = 87A202B129A3D73400E1D19B /* Mixpanel */; };
+		87A46E1229A5587200327EE1 /* ios-help.png in Resources */ = {isa = PBXBuildFile; fileRef = 87A46E1129A5587200327EE1 /* ios-help.png */; };
 		87A48D3529A2D7E20071039A /* TranslatePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A48D3329A2D7E20071039A /* TranslatePopUp.swift */; };
 		87A48D3629A2D7E20071039A /* TranslatePopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A48D3429A2D7E20071039A /* TranslatePopUp.xib */; };
 		87A5ADA229A3014600B15DFA /* RephrasePopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5ADA029A3014600B15DFA /* RephrasePopUp.swift */; };
@@ -70,6 +71,7 @@
 		8753518629A24D73009B1CE3 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		87A2D1AF29912A5C0024DF30 /* tzpi 2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "tzpi 2.entitlements"; sourceTree = "<group>"; };
 		87A2D1B029912C510024DF30 /* tzpi2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tzpi2.entitlements; sourceTree = "<group>"; };
+		87A46E1129A5587200327EE1 /* ios-help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios-help.png"; sourceTree = "<group>"; };
 		87A48D3329A2D7E20071039A /* TranslatePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePopUp.swift; sourceTree = "<group>"; };
 		87A48D3429A2D7E20071039A /* TranslatePopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TranslatePopUp.xib; sourceTree = "<group>"; };
 		87A5ADA029A3014600B15DFA /* RephrasePopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RephrasePopUp.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		87ACB203298EE9A000FFC499 /* tzpi2 */ = {
 			isa = PBXGroup;
 			children = (
+				87A46E1129A5587200327EE1 /* ios-help.png */,
 				87A2D1B029912C510024DF30 /* tzpi2.entitlements */,
 				87ACB204298EE9A000FFC499 /* KeyboardViewController.swift */,
 				8753518429A24D49009B1CE3 /* PopUp.swift */,
@@ -370,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8753518729A24D73009B1CE3 /* View.xib in Resources */,
+				87A46E1229A5587200327EE1 /* ios-help.png in Resources */,
 				87A48D3629A2D7E20071039A /* TranslatePopUp.xib in Resources */,
 				87A6C4352990693F004C0278 /* kb.storyboard in Resources */,
 				87A5ADA329A3014600B15DFA /* RephrasePopUp.xib in Resources */,
