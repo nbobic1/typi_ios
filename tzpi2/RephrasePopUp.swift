@@ -33,7 +33,7 @@ class RephrasePopUp: UIViewController {
         hide()
     }
     @IBAction func excited(_ sender: Any) {
-        keyboardViewController.rephraseCallback(option: "excited")
+        keyboardViewController.rephraseCallback(option: "exciteing")
         hide()
     }
     @IBAction func sarcastic(_ sender: Any) {
@@ -55,7 +55,7 @@ class RephrasePopUp: UIViewController {
 
         configView()
         contentView.layer.borderWidth=2
-        contentView.layer.borderColor=UIColor.blue.cgColor
+        contentView.layer.borderColor=UIColor.systemBlue.cgColor
     }
     
     private func configView() {
@@ -73,17 +73,15 @@ class RephrasePopUp: UIViewController {
     }
     
     private func show() {
-        UIView.animate(withDuration: 1, delay: 0.2) {
+      //  UIView.animate(withDuration: 1, delay: 0.2) {
            self.contentView.alpha = 1
-        }
+        //}
     }
     
     func hide() {
-        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut) {
-           self.contentView.alpha = 0
-        } completion: { _ in
-            self.dismiss(animated: false)
+          self.contentView.alpha = 0
+           self.dismiss(animated: false)
             self.removeFromParent()
-        }
+        
     }
 }

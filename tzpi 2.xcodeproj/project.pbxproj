@@ -88,6 +88,7 @@
 		87ACB202298EE99F00FFC499 /* tzpi2.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = tzpi2.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		87ACB204298EE9A000FFC499 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		87ACB206298EE9A000FFC499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87AF400629A4DBA30037C0DC /* tzpi-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "tzpi-2-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +158,7 @@
 		87ACB1D3298EE95C00FFC499 /* tzpi 2 */ = {
 			isa = PBXGroup;
 			children = (
+				87AF400629A4DBA30037C0DC /* tzpi-2-Info.plist */,
 				87A2D1AF29912A5C0024DF30 /* tzpi 2.entitlements */,
 				87ACB1D4298EE95C00FFC499 /* tzpi_2App.swift */,
 				87ACB1D6298EE95C00FFC499 /* ContentView.swift */,
@@ -562,6 +564,7 @@
 				DEVELOPMENT_TEAM = J4R5PRZPV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tzpi-2-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -593,6 +596,7 @@
 				DEVELOPMENT_TEAM = J4R5PRZPV2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tzpi-2-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

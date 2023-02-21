@@ -133,9 +133,9 @@ class KeyboardViewController: UIInputViewController {
             self.textDocumentProxy.deleteBackward()
                }
         
-        self.textDocumentProxy.insertText("wait...")
+        self.textDocumentProxy.insertText("processing...")
         print("obrisano")
-        URLSession.shared.dataTask(with: request) { (data, response, error) in
+	        URLSession.shared.dataTask(with: request) { (data, response, error) in
             print("moja buducnost")
             if let error = error {
                  print("Error: \(error)")
@@ -154,9 +154,11 @@ class KeyboardViewController: UIInputViewController {
                              var text=text1.replacingOccurrences(of: "\n", with: " ")
                             // self.textDocumentProxy.replace(<#T##UITextRange#>, withText: a)
                                 // self.textDocumentProxy.deleteBackward()
-                             for _ in 0..<7 {
+                             
+                             /*for _ in 0..<13 {
                                  self.textDocumentProxy.deleteBackward()
-                                    }
+                                    }*/
+                         //    self.textDocumentProxy.setMarkedText("proba", selectedRange:NSRange(location: 0, length:4))
                              self.textDocumentProxy.insertText(text)
                              Mixpanel.initialize(token: "04a8679d9c235e46100327d4f06c43aa", trackAutomaticEvents: true)
                              if(prompt.contains("Rephrase"))

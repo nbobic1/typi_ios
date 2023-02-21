@@ -72,7 +72,7 @@ class TranslatePopUp: UIViewController {
 
         configView()
         contentView.layer.borderWidth=2
-        contentView.layer.borderColor=UIColor.blue.cgColor
+        contentView.layer.borderColor=UIColor.systemBlue.cgColor
     }
     
     private func configView() {
@@ -90,17 +90,16 @@ class TranslatePopUp: UIViewController {
     }
     
     private func show() {
-        UIView.animate(withDuration: 1, delay: 0.2) {
-           self.contentView.alpha = 1
-        }
+        self.contentView.alpha = 1
+//        UIView.animate(withDuration: 1, delay: 0.2) {
+  //      }
     }
     
     func hide() {
-        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut) {
            self.contentView.alpha = 0
-        } completion: { _ in
+        
             self.dismiss(animated: false)
             self.removeFromParent()
-        }
+       
     }
 }
