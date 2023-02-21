@@ -89,6 +89,7 @@ class KeyboardViewController: UIInputViewController {
                rephraseView.appear(sender: self)
     }
     @IBAction func help(_ sender: Any) {
+        
         let overLayerView = PopUp()
                overLayerView.appear(sender: self)
     }
@@ -113,15 +114,15 @@ class KeyboardViewController: UIInputViewController {
         var request = URLRequest(url: url)
         print("kurva")
         request.httpMethod = "POST"
-        let userDefaults = UserDefaults(suiteName: "group.etf.tzpi-2.tzpi2")
-        let myValue:String = userDefaults!.string(forKey: "Key")!
-        print(myValue)
-        request.addValue("Bearer \(myValue)", forHTTPHeaderField: "Authorization")
+      //  let userDefaults = UserDefaults(suiteName: "group.etf.tzpi-2.tzpi2")
+       // let myValue:String = userDefaults!.string(forKey: "Key")!
+      
+        request.addValue("", forHTTPHeaderField: "Authorization")
         reverseContent=a
         let json: [String: Any] = [
         "model": "text-davinci-003",
         "prompt": "\(a)",
-        "max_tokens": 7,
+        "max_tokens": 30,
         "temperature": 0.7,
         "frequency_penalty": 0.5]
         let jsonData = try? JSONSerialization.data(withJSONObject: json)
@@ -146,17 +147,39 @@ class KeyboardViewController: UIInputViewController {
                 do {
                             if let data = responseString1.data(using: .utf8),
                          let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-                         let choices = json["choices"] as? [[String: Any]] {
+                         let choices = json["choices"] as? [[String: Any]],let usageDict = json["usage"] as? [String: Any], let totalTokens = usageDict["total_tokens"] as? Int {
                          if let firstChoice = choices.first,
-                         let text = firstChoice["text"] as? String {
-                         print(text)
-                           
+                         let text1 = firstChoice["text"] as? String {
+                             print(text1+" tokems=="+String(totalTokens))
+                             var text=text1.replacingOccurrences(of: "\n", with: " ")
                             // self.textDocumentProxy.replace(<#T##UITextRange#>, withText: a)
                                 // self.textDocumentProxy.deleteBackward()
                              for _ in 0..<7 {
                                  self.textDocumentProxy.deleteBackward()
                                     }
-                             self.textDocumentProxy.insertText(text)                         }
+                             self.textDocumentProxy.insertText(text)
+                             Mixpanel.initialize(token: "04a8679d9c235e46100327d4f06c43aa", trackAutomaticEvents: true)
+                             if(prompt.contains("Rephrase"))
+                             {
+                                 Mixpanel.mainInstance().track(event: "TypiRephrase")
+                             }
+                             else if(prompt.contains("Translate"))
+                             {
+                                 Mixpanel.mainInstance().track(event: "TypiTranslate")
+                             }
+                             else if(prompt.contains("Correct grammar"))
+                             {
+                                 Mixpanel.mainInstance().track(event: "TypiCorrect")
+                             }
+                             else if(prompt.contains("Summarize"))
+                             {
+                                 Mixpanel.mainInstance().track(event: "TypiSummarize")
+                             } else
+                             {
+                                 Mixpanel.mainInstance().track(event: "TypiAnswer")
+                             }
+                             
+                         }
                          }
                  } catch {
                      print("Error: \(error)")
